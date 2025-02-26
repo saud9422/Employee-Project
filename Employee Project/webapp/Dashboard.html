@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+}
+
+.sidebar {
+	width: 250px;
+	background: #333;
+	color: white;
+	padding: 20px;
+	position: fixed;
+	height: 100%;
+}
+
+.sidebar h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.nav {
+	width: 100%;
+	background: #444;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	left: 250px;
+	right: 0;
+}
+
+.content {
+	margin-left: 250px;
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 60px);
+	gap: 20px;
+}
+
+.button {
+	padding: 20px 40px;
+	font-size: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+
+.button.reg {
+	background: #28a745;
+	color: white;
+}
+
+.button.reg:hover {
+	background: #218838;
+}
+
+.button.login {
+	background: #007bff;
+	color: white;
+}
+
+.button.login:hover {
+	background: #0056b3;
+}
+</style>
+</head>
+<body>
+	<div class="sidebar">
+		<h2>Dashboard</h2>
+	</div>
+	<div class="nav">
+		<h2>Navigation Bar</h2>
+	</div>
+	<div class="content">
+		<a href="Registration.html">
+			<button class="button reg">Registration</button>
+		</a> <a href="login.html"><button class="button login">Login</button></a>
+
+	</div>
+</body>
+</html>
